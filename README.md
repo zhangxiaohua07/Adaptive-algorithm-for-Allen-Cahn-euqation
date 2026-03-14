@@ -129,6 +129,7 @@ It is recommended to install deal.II in /usr/local/deal.II.
   │ $ make 
   │ $ make install
   └────
+ 
  • Environment variables
 ┌───
 │ $ vim ~/.bashrc
