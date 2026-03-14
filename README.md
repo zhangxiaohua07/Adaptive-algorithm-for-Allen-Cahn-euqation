@@ -1,5 +1,5 @@
-
-#Usage:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Usage:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 1. compile with make [-e debug=no];
 2. generate the mesh with easymesh as:
