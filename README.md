@@ -23,7 +23,7 @@ Table of Contents
 3. Flowchart
 .. 1. deal.II installation
 .. 2. AFEPack Installation:
-
+---------------------------------------
 
 1 Environment:
 
@@ -131,6 +131,7 @@ It is recommended to install deal.II in /usr/local/deal.II.
   └────
  
  • Environment variables
+ 
 ┌───
 │ $ vim ~/.bashrc
       Add the followings at the end of this file.
