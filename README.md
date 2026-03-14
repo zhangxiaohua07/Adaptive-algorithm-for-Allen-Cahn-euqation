@@ -1,6 +1,6 @@
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 Usage:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 1. compile with make [-e debug=no];
 2. generate the mesh with easymesh as:
 	     easymesh D
@@ -10,13 +10,13 @@ Usage:
 
 
   
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 INSTALLATION OF AFEPACK 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
 System environment：ubuntu22.04
 
 Table of Contents
-─────────────────
+
 
 1. Environment:
 2. Some issue:
@@ -26,7 +26,7 @@ Table of Contents
 
 
 1 Environment:
-══════════════
+
 sudo apt-get install cmake
 
 sudo apt-get install g++ gcc gfortran fort77
@@ -38,7 +38,7 @@ sudo apt-get install libtbb-dev
 sudo apt-get install automake
 
 2 Some issue(openmpi):
-═════════════
+
 
 Here we directly install the followings from the library:
 sudo apt-get install build-essential binutils libopenmpi-dev openmpi-doc openmpi-bin 
@@ -53,10 +53,9 @@ mpic++ -> /usr/bin/mpic++.openmpi*,   mpicxx -> /usr/bin/mpic++.openmpi*
 
 
 3 Flowchart
-═══════════
 
 3.1 deal.II installation
-────────────────────────
+
 It is recommended to install deal.II in /usr/local/deal.II.
 
   ----------
@@ -118,7 +117,7 @@ It is recommended to install deal.II in /usr/local/deal.II.
 
 
 3.2 AFEPack Installation:
-─────────────────────────
+
 
   • Unpack the package
 
