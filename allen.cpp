@@ -78,7 +78,7 @@ void allen::initialize()
     //Read and process the mesh
     h_tree.readEasyMesh("D");
     ir_mesh = new IrregularMesh<DIM>(h_tree);
-    ir_mesh->globalRefine(0);
+    ir_mesh->globalRefine(2);
     ir_mesh->semiregularize();
     ir_mesh->regularize(false);
     
@@ -200,7 +200,7 @@ void allen::adaptMesh()
 
 
     // Adaptivity control parameters
-    mesh_adaptor.tolerence() = 1.0e-2;
+    mesh_adaptor.tolerence() = 5.0e-3;
     mesh_adaptor.convergenceOrder() = 1;
     mesh_adaptor.refineStep() = 1; 
     mesh_adaptor.adapt();
@@ -443,7 +443,7 @@ void allen::run()
                   << ", DOFs: " << fem_space->n_dof() << std::endl;
     }
 
-    u_h->writeOpenDXData("eg31_0.dx"); 
+    u_h->writeOpenDXData("eg32_0.dx"); 
 
     // Set up the file to log energy data
     std::ofstream eng_file("energy.dat");
@@ -504,7 +504,7 @@ void allen::run()
                       << energy_diff 
                       << std::endl;
 
-            std::string filename = "eg31_" + std::to_string(t) + ".dx";
+            std::string filename = "eg32_" + std::to_string(t) + ".dx";
             u_h->writeOpenDXData(filename.c_str());
         }
 
